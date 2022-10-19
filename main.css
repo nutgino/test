@@ -91,6 +91,7 @@ article {
     padding: 10px;
     margin-bottom: 10px;
     font-size: 12px;
+    text-align: center;
 }
 
 p {
@@ -203,4 +204,20 @@ a{
     width: 90%;
     margin: 30px auto 0 auto;
     color: aliceblue;
+}
+form label{
+    color: aliceblue;
+    
+}
+
+
+#formc form{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+article img{
+    margin-top: 20px;
 }

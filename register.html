@@ -4,53 +4,61 @@
 <head>
     <meta charset="utf-8" />
     <title>Web Form of HTML5</title>
-    <link rel="stylesheet" href="main.css>
+    <link rel="stylesheet" href="main.css">
 </head>
-<body>
-<header></header>
-<nav>
-<ul>
-<li>Home</li>
-<li>Register</li>
-<li>Contact</li>
-<li>About</li>
-</ul>
-</nav>
-<section>
-<article>
-<form method=" get" action="">
 
-    <label>First name : </label><input name="fname" type="text" required />*<br /><br />
+<body id="BG">
+    <div id="container">
+        <header>
+            <h1>Welcome to Information Technology Department </h1>
+        </header>
+        <nav>
+            <ul id="bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html"> About </a></li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <img id="imuser" src="user.png" alt="">
+                <div id="formc">
+                    
+                    <form method=" get" action="">
 
-    <label>Last name : </label><input name="lname" type="text" required />*<br /><br />
+                        <label>First name : </label><input name="fname" type="text" required />*<br /><br />
 
-    <label>Age : </label><input name="age" type="number" step="1" min="1" max="100" value="1" /><br /><br />
-    <label>E-Mail : </label><input name="mail" type="email" placeholder="youremail@email.com" autofocus
-        required /><br /><br />
+                        <label>Last name : </label><input name="lname" type="text" required />*<br /><br />
 
-    <script>
-        function RangeNumber() {
-            var moveVal =
+                        <label>Age : </label><input name="age" type="number" step="1" min="1" max="100"
+                            value="1" /><br /><br />
+                        <label>E-Mail : </label><input name="mail" type="email" placeholder="youremail@email.com"
+                            autofocus required /><br /><br />
 
-                document.getElementById('rmove').value;
+                        <script>
+                            function RangeNumber() {
+                                var moveVal =
 
-            document.getElementById('shownum').innerHTML = moveVal;
+                                    document.getElementById('rmove').value;
 
-        }
-    </script>
-    <label>Try to move me : </label><input name="moveme" id="rmove" type="range" min="0" max="100" value="50"
-        onchange="RangeNumber(event)" />
+                                document.getElementById('shownum').innerHTML = moveVal;
 
-    <span id="shownum">50</span>
-    <br /><br />
-    <label>Tel. Phone : </label><input name="tel" type="tel" placeholder="(999) 999-999"
-        pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{3}.*?$" /> <br /><br />
-    <input type="submit" value="สมัครสมาชิก" /><br />
-    </form>
+                            }
+                        </script>
+                        <label>Try to move me : </label><input name="moveme" id="rmove" type="range" min="0" max="100"
+                            value="50" onchange="RangeNumber(event)" />
 
-    </article>
-    </section>
-    <footer></footer>
-    </body>
+                        <span id="shownum">50</span>
+                        <br /><br />
+                        <label>Tel. Phone : </label><input name="tel" type="tel" placeholder="(999) 999-999"
+                            pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{3}.*?$" /> <br /><br />
+                        <input type="submit" value="สมัครสมาชิก" /><br />
+                    </form>
+                </div>
+            </article>
+        </section>
+        <footer></footer>
+</body>
 
 </html>
